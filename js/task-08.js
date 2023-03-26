@@ -11,8 +11,12 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     alert("Поле не може бути пустим!");
   }
-
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const obj = {
+    Login: `${ email.value }`,
+    Password: `${ password.value }`
+  
+}
+  console.log(obj);
   event.currentTarget.reset();
 }
 
